@@ -1,42 +1,75 @@
-# Number-Guessing-Game
-🎯 Number Guessing Game (C++)
-This is a simple command-line based Number Guessing Game written in C++ where:
+🎯 Number Guessing Game (Tkinter GUI)
 
-The player defines the number range.
+A fun and interactive Number Guessing Game built with Python (Tkinter).
+Players try to guess a randomly generated number within a set number of attempts. The game includes hints, stats tracking, hall of fame records, streaks, and a stylish modern UI.
 
-A random secret number is generated within that range.
+✨ Features
 
-The player tries to guess it within a limited number of attempts.
+🎮 Custom Game Setup – choose your own minimum, maximum, and number of attempts.
 
-The game keeps track of the best score across rounds.
+🎲 Interactive Game Arena – enter guesses, get real-time hints, and feedback with emojis.
 
-🚀 Features
-User-defined range and guess limit.
+📊 Game Statistics – track games played, games won, win rate, best score, average attempts, and streaks.
 
-Input validation to prevent crashes.
+🏅 Hall of Fame – see your best scores by difficulty levels (Easy, Medium, Hard, Expert).
 
-Feedback after each guess: "Too high", "Too low", or "Correct".
+🔄 Recent Activity Log – displays the last 5 game outcomes.
 
-Displays the best score (fewest attempts).
+💾 Persistent Data – saves best scores and game history using JSON files.
 
-Option to replay the game after each round.
+🎨 Modern UI – gradient background, styled buttons, colorful cards, emojis for engagement.
 
-🧠 How It Works
-You enter the minimum and maximum value for the secret number.
+📷 Screenshots (Optional if you want to add)
 
-The program generates a random number in that range.
+(Add screenshots of the UI here if possible)
 
-You enter how many guesses you're allowed.
+🚀 How to Run
+1. Clone the repository:
+git clone https://github.com/yourusername/number-guessing-game.git
+cd number-guessing-game
 
-You try to guess the secret number within the allowed attempts.
+2. Install Python (if not already installed):
 
-After each guess, the program will tell you if it's too high or too low.
+Make sure you have Python 3.8+ installed.
 
-If you guess correctly, it congratulates you and updates the best score if it's a new record.
+3. Run the game:
+python number_guessing_game.py
 
-After each round, you're asked if you want to play again.
+📂 Project Structure
+number-guessing-game/
+│── number_guessing_game.py   # Main game code
+│── best_scores.json          # Stores best scores
+│── game_history.json         # Stores game history
+│── README.md                 # Project documentation
 
-📦 Requirements
-C++ compiler (e.g. g++)
+🕹️ How to Play
 
-Standard C++ libraries
+Enter your minimum number, maximum number, and maximum attempts in the setup panel.
+
+Click 🚀 START NEW GAME.
+
+Enter your guess in the input field and press Enter or click 🎯 MAKE GUESS.
+
+Get feedback:
+
+📈 Too Low → Guess higher
+
+📉 Too High → Guess lower
+
+🎉 Correct → You win!
+
+Track your stats and achievements in the Statistics and Hall of Fame sections.
+
+✅ Requirements
+
+Python 3.8+
+
+Tkinter (comes pre-installed with Python)
+
+🏗️ Future Improvements
+
+Add multiplayer mode 🎭
+
+Difficulty presets (Easy, Medium, Hard)
+
+Save user profiles
